@@ -77,3 +77,4 @@ diaspora.iml
 # WebTranslateIt
 .wti
 config/secret_env
+script/start_server.sh

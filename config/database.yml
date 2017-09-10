@@ -2,8 +2,8 @@ postgresql: &postgresql
   adapter: postgresql
   host: localhost
   port: 5432
-  username: postgres
-  password:
+  username: <%= ENV['DEV_DB_USER'] %>
+  password: <%= ENV['DEV_DB_PW'] %>
   encoding: unicode
 
 mysql: &mysql
@@ -37,7 +37,7 @@ combined: &combined
   <<: *common
 development:
   <<: *combined
-  database: diaspora_development
+  database: <%= ENV['DEV_DB'] %>
 production:
   <<: *combined
   database: diaspora-db
