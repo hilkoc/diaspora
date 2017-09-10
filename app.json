@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dokku": {
+      "predeploy":  "bundle exec rake db:migrate",
+      "postdeploy": "echo This is the postdeploy hook defined in app.json"
+    }
+  }
+}

@@ -1,4 +1,6 @@
 source "https://rubygems.org"
+# Need to set the ruby version here, for dokku to work
+ruby "2.4.1"
 
 gem "rails", "5.1.3"
 
